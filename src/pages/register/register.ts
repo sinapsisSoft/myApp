@@ -17,7 +17,9 @@ import { AngularFireAuth } from "angularfire2/auth"
 export class RegisterPage {
   
   user = {} as User;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private angularFireAuth: AngularFireAuth) {
+  constructor(public navCtrl: NavController, 
+  public navParams: NavParams, 
+  private angularFireAuth: AngularFireAuth) {
   }
 //wait for a piece of the delivery promise typescrip async 
   async register(user: User){

@@ -30,7 +30,7 @@ export class LoginPage {
   //wait for a piece of the delivery promise typescrip async 
   async login(user: User){
     try{
-      const result=this.angularFireAuth.auth.signInWithEmailAndPassword(user.email, user.password).catch(function(error){});
+      const result=this.angularFireAuth.auth.signInWithEmailAndPassword(user.email, user.password);
       console.log(result);
       if(result){
         this.navCtrl.setRoot(HomePage);
